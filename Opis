@@ -1,0 +1,69 @@
+GUI
+Projekt 1
+
+Napisz aplikację, która będzie służyła do obsługi logistycznej morskiego portu w zakresie
+terminalu przeładunkowego dla statków transportowych przystosowanych do przewozu kontenerów. Aplikacja będzie służyła do rozładunku i załadunku kontenerów z/na statek. W przypadku
+rozładunku kontenery mogą trafić do magazynu lub bezpośrednio na wagon transportowy.
+Każdy statek ma inną pojemność i nośność definiowaną przez:
+• maksymalną liczbę kontenerów z ładunkiem toksycznym lub wybuchowym możliwych do
+załadowania w ramach statku
+• maksymalną liczbę ciężkich kontenerów
+• maksymalną liczbę kontenerów wymagających podłączenia do sieci elektrycznej
+• maksymalną liczbę wszystkich kontenerów
+• maksymalną ładowność wagową statku
+Dodatkowo każdy statek posiada podstawowe informacje o sobie (nazwę, port macierzysty,
+lokalizacja źródłowa transportu oraz docelowa). Każdy statek również posiada swój unikatowy
+numer identyfikacyjny nadawany automatycznie podczas tworzenia obiektu.
+W przypadku ładowności kontenerów toksycznych i wybuchowych - wartość ta jest wspólna
+dla obu typów kontenerów, co oznacza, iż jeśli w statku zdefiniowano np. trzy miejsca na kontenery z materiałem wybuchowym lub toksycznym, to miejsca te mogą być załadowane odpowiednio przez:
+• 3 kontenery z materiałami wybuchowymi
+• 2 kontenery z materiałami wybuchowymi i 1 kontener z materiałami toksycznymi
+• 1 kontener z materiałami wybuchowymi i 2 kontenery z materiałami toksycznymi
+• 3 kontenery z materiałami toksycznymi
+Każdy z typów kontenerów posiada inny zestaw cech (np. nadawca, tara, zabezpieczenia,
+waga netto, waga brutto, informacje o certyfikatach, itp.). W przypadku każdego typu kontenera
+należy wymyślić co najmniej jedną unikalną cechę na wskroś przez wszystkie typy kontenerów.
+Dodatkowo każdy kontener posiada swój unikatowy numer identyfikacyjny nadawany automatycznie podczas tworzenia obiektu.
+Mamy do dyspozycji między innymi:
+• kontener podstawowy,
+• kontener ciężki, będący rodzajem kontenera podstawowego,
+• kontener chłodniczy, będący rodzajem kontenera ciężkiego, wymagający podłączenia do
+sieci elektrycznej statku
+• kontener na materiały ciekłe, będący rodzajem kontenera podstawowego
+• kontener na materiały wybuchowe, będący rodzajem kontenera ciężkiego
+• kontener na materiały toksyczne, będący rodzajem kontenera ciężkiego, który dostępny
+jest w dwóch wersjach: kontener na toksyczne materiały sypkie oraz kontener na ciekłe
+materiały toksyczne, który nie tylko jest rodzajem kontenera ciężkiego, ale również posiada
+cechy kontenera na materiały ciekłe.
+
+W ramach statku jesteśmy ograniczeni nie tylko maksymalną liczbą kontenerów, ale również maksymalną ładownością wagową statku, w związku z czym przed załadowaniem kolejnego
+kontenera musimy być pewni, czy kolejny ładunek nie przekroczy dopuszczalnej bezpiecznej nośności statku. Nie ma potrzeby tworzenia wyspecjalizowanego algorytmu załadunkowego (np.
+czy statek się nie zacznie przechylać w związku z nierównomiernym załadunkiem).
+W ramach aplikacji musimy mieć m.in. możliwość z poziomu menu stworzenia nowego statku
+oraz kontenerów każdego typu, załadowania kontenera na statek oraz rozładowania kontenera
+na wagon lub do magazynu.
+W sytuacji, gdy rozładowujemy kontener na wagon kolejowy, zakładamy, że jeden skład może
+pomieścić 10 kontenerów. Po zapełnieniu tego, należy odczekać 30 sekund na odjazd aktualnego
+składu i przyjazd kolejnego.
+Magazyn przeładunkowy posiada pewną ograniczoną liczbę kontenerów jakie może pomieścić,
+definiowaną podczas tworzenia obiektu typu Magazyn. W ramach magazynu wolno przechowywać każdy typ kontenera, jednak z zastrzeżeniem, iż kontenery z materiałami wybuchowymi
+mogą być magazynowane jedynie przez 5 dni, kontenery z płynnymi materiałami toksycznymi
+przez 10 dni, zaś kontenery z sypkimi materiałami toksycznymi maksymalnie przez 14 dni.
+W związku z powyższym, należy zaimplementować mechanizm upływającego czasu za pośrednictwem wątków. Wątek powinien co 5 sekund przesuwać datę o 1 dzień do przodu, symulując upływ czasu. Równolegle powinny być sprawdzane kwestie magazynowe i w przypadku,
+gdy magazynowany kontener przekraczałby maksymalny czas magazynowania, zostawałby on
+w związku z decyzjami celniczymi dot. bezpieczeństwa składowania i magazynowania towarów
+utylizowany poprzez wywiezienie z terenu portu, a następnie zapomniany z punku widzenia
+aplikacji. Należy również zaimplementować 30-sekundowe odliczanie po zapełnieniu składu kolejowego do przyjazdu kolejnego składu, umożliwiającego dalsze rozładowywanie kontenerów na
+wagony.
+W sytuacji, gdy kontener zostanie zutylizowany, nadawca otrzymuje ostrzeżenie w postaci
+obiektu wyjątku typu IrresponsibleSenderWithDangerousGoods zawierającego informacje dot. kontenera, tj. daty przybycia do magazynu, daty utylizacji oraz unikalnego numeru
+identyfikacyjnego). W przypadku, gdy nadawca uzbiera w ramach dostaw dwa ostrzeżenia, to
+w przypadku kolejnych kontenerów wymagających magazynowania, takowy towar nie zostanie
+przyjęty i zostanie na statku transportowym z nakazem odesłania do nadawcy.
+Nadawca posiada ponad wymienione wcześniej informacje takie dane jak imię, nazwisko,
+pesel, adres, datę urodzenia (data urodzenia nie jest przechowywana specjalnie w ramach pola
+klasy - realizujemy ją w w postaci metody, która wyświetli datę urodzenia jako obiekt klasy
+LocalDate na podstawie numeru PESEL).
+W ramach każdego statku musimy zapewnić możliwość rozładowania i załadowania kontenera, jak i wypuszczenia statku w dalszą drogę z portu. Analogicznie w przypadku magazynu
+musimy zapewnić co najmniej metody umożliwiające magazynowanie kontenera, wyjęcie kontenera z magazynu i załadowanie na wskazany statek, sprawdzenie aktualnego stanu magazynowego wyświetlenie zawartości magazynu oraz manualną utylizację wskazanego kontenera.
+
