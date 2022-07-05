@@ -1,0 +1,446 @@
+---- s22931: Aktualny stan portu: ----
+
+___PORT___:
+1 Nazwa Portu: Port morski Gdańsk
+
+___STATKI___:
+-------------------
+4 Statek: USS Missouri, 
+port macierzysty: USA, 
+lokalizacja źródłowa: Los Angeles, 
+lokalizacja docelowa: Shanghai, 
+maxLiczbaToksycznychKontenerow: 16, 
+maxLiczbaCiezkichKontenerow: 50, 
+maxWymagajacychPodlaczenia: 13, 
+maxLiczbaWszystkichKontenerow: 90, 
+maxLadownoscStatku: 2980
+-------------------
+3 Statek: Titanic-2, 
+port macierzysty: NY566, 
+lokalizacja źródłowa: New-York, 
+lokalizacja docelowa: Southampton, 
+maxLiczbaToksycznychKontenerow: 4, 
+maxLiczbaCiezkichKontenerow: 4, 
+maxWymagajacychPodlaczenia: 1, 
+maxLiczbaWszystkichKontenerow: 80, 
+maxLadownoscStatku: 61769
+-------------------
+1 Statek: Marina, 
+port macierzysty: Poland, 
+lokalizacja źródłowa: Gdansk, 
+lokalizacja docelowa: Latvia, 
+maxLiczbaToksycznychKontenerow: 3, 
+maxLiczbaCiezkichKontenerow: 3, 
+maxWymagajacychPodlaczenia: 2, 
+maxLiczbaWszystkichKontenerow: 9, 
+maxLadownoscStatku: 52939
+-------------------
+2 Statek: EvergreenLine, 
+port macierzysty: SantaMonica-AS23, 
+lokalizacja źródłowa: Jebel ALi, 
+lokalizacja docelowa: Port Klang, 
+maxLiczbaToksycznychKontenerow: 10, 
+maxLiczbaCiezkichKontenerow: 2, 
+maxWymagajacychPodlaczenia: 3, 
+maxLiczbaWszystkichKontenerow: 15, 
+maxLadownoscStatku: 80905
+-------------------
+5 Statek: Aurora, 
+port macierzysty: South Korea, 
+lokalizacja źródłowa: Busan, 
+lokalizacja docelowa: Rotterdam, 
+maxLiczbaToksycznychKontenerow: 6, 
+maxLiczbaCiezkichKontenerow: 41, 
+maxWymagajacychPodlaczenia: 1, 
+maxLiczbaWszystkichKontenerow: 56, 
+maxLadownoscStatku: 31341
+
+___KONTENERY___:
+-------------------
+3 Kontener: 
+Nadawca: Zhao Wen, 
+tara: 40-DryVan, 
+zabiezpiecznie: SlidingLoading, 
+waga Netto: 100, 
+waga Brutto: 120, 
+certyfikat: CSC, 
+dni przechowywania: 20
+-------------------
+30 Kontener dla materialow toksycznych(cieklych): 
+Nadawca: Jan Kowalski, 
+tara: Cube400-500, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 100, 
+waga Brutto: 120, 
+certyfikat: RID, 
+dni przechowywania: 8, 
+pojemnosc(m3): 120, 
+material ciekly: Formaldehyde, 
+pojemnosc(L): 56
+-------------------
+7 Kontener dla materialow cieklych: 
+Nadawca: Dong Xingjuan, 
+tara: WideVan-100, 
+zabiezpiecznie: SlidingLoading, 
+waga Netto: 180, 
+waga Brutto: 199, 
+certyfikat: IMDG, 
+dni przechowywania: 72, 
+pojemnosc(L): 70
+-------------------
+12 Kontener Chlodniczy: 
+Nadawca: Dong Xingjuan, 
+tara: 40-High Cube, 
+zabiezpiecznie: SlidingLoading, 
+waga Netto: 200, 
+waga Brutto: 230, 
+certyfikat: IMDG, 
+dni przechowywania: 2, 
+pojemnosc(m3): 20, 
+temperatura: 9
+-------------------
+18 Kontener Ciezki: 
+Nadawca: Zhao Wen, 
+tara: 470-High Cube, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 230, 
+waga Brutto: 265, 
+certyfikat: IMDG, 
+dni przechowywania: 10, 
+pojemnosc(m3): 450
+-------------------
+24 Kontener dla materialow wybuchowych: 
+Nadawca: Leo Johnson, 
+tara: 40-DryVan, 
+zabiezpiecznie: SlidingLoading, 
+waga Netto: 230, 
+waga Brutto: 265, 
+certyfikat: IMDG, 
+dni przechowywania: 3, 
+pojemnosc(m3): 500, 
+material wybuchowy: rtec
+-------------------
+27 Kontener dla materialow toksycznych(sypkich): 
+Nadawca: Dong Xingjuan, 
+tara: 470-High Cube, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 230, 
+waga Brutto: 265, 
+certyfikat: ISO, 
+dni przechowywania: 15, 
+pojemnosc(m3): 250, 
+material sypki: Cadmium
+-------------------
+13 Kontener Chlodniczy: 
+Nadawca: Barlomej Kurowski, 
+tara: Cube400-500, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 400, 
+waga Brutto: 456, 
+certyfikat: ISO, 
+dni przechowywania: 13, 
+pojemnosc(m3): 20, 
+temperatura: 9
+-------------------
+28 Kontener dla materialow toksycznych(sypkich): 
+Nadawca: Dong Xingjuan, 
+tara: Cube-60, 
+zabiezpiecznie: SlidingLoading, 
+waga Netto: 423, 
+waga Brutto: 490, 
+certyfikat: ISO, 
+dni przechowywania: 3, 
+pojemnosc(m3): 350, 
+material sypki: Asbestos
+-------------------
+9 Kontener dla materialow cieklych: 
+Nadawca: Dong Xingjuan, 
+tara: Cube80, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 600, 
+waga Brutto: 605, 
+certyfikat: ADR, 
+dni przechowywania: 10, 
+pojemnosc(L): 55
+-------------------
+6 Kontener dla materialow cieklych: 
+Nadawca: Jan Kowalski, 
+tara: 40-High Cube, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 580, 
+waga Brutto: 700, 
+certyfikat: ADR, 
+dni przechowywania: 2, 
+pojemnosc(L): 60
+-------------------
+10 Kontener dla materialow cieklych: 
+Nadawca: Zhao Wen, 
+tara: 470-High Cube, 
+zabiezpiecznie: SlidingLoading, 
+waga Netto: 982, 
+waga Brutto: 989, 
+certyfikat: IMDG, 
+dni przechowywania: 40, 
+pojemnosc(L): 63
+-------------------
+8 Kontener dla materialow cieklych: 
+Nadawca: Jan Kowalski, 
+tara: WideVan-100, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 980, 
+waga Brutto: 1000, 
+certyfikat: ISO, 
+dni przechowywania: 13, 
+pojemnosc(L): 50
+-------------------
+14 Kontener Chlodniczy: 
+Nadawca: Barlomej Kurowski, 
+tara: 470-High Cube, 
+zabiezpiecznie: SlidingLoading, 
+waga Netto: 1230, 
+waga Brutto: 1250, 
+certyfikat: CSC, 
+dni przechowywania: 45, 
+pojemnosc(m3): 20, 
+temperatura: 9
+-------------------
+4 Kontener: 
+Nadawca: Leo Johnson, 
+tara: Cube400-500, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 1200, 
+waga Brutto: 1500, 
+certyfikat: RID, 
+dni przechowywania: 11
+-------------------
+19 Kontener Ciezki: 
+Nadawca: Barlomej Kurowski, 
+tara: 40-High Cube, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 1200, 
+waga Brutto: 1500, 
+certyfikat: ISO, 
+dni przechowywania: 4, 
+pojemnosc(m3): 5600
+-------------------
+29 Kontener dla materialow toksycznych(cieklych): 
+Nadawca: Barlomej Kurowski, 
+tara: 40-DryVan, 
+zabiezpiecznie: SlidingLoading, 
+waga Netto: 1200, 
+waga Brutto: 1500, 
+certyfikat: IMDG, 
+dni przechowywania: 6, 
+pojemnosc(m3): 900, 
+material ciekly: Glue, 
+pojemnosc(L): 30
+-------------------
+5 Kontener: 
+Nadawca: Barlomej Kurowski, 
+tara: Cube-60, 
+zabiezpiecznie: SlidingLoading, 
+waga Netto: 1340, 
+waga Brutto: 1650, 
+certyfikat: IMDG, 
+dni przechowywania: 14
+-------------------
+25 Kontener dla materialow wybuchowych: 
+Nadawca: Dong Xingjuan, 
+tara: 470-High Cube, 
+zabiezpiecznie: SlidingLoading, 
+waga Netto: 2300, 
+waga Brutto: 2600, 
+certyfikat: ISO, 
+dni przechowywania: 4, 
+pojemnosc(m3): 30, 
+material wybuchowy: Pentryt
+-------------------
+11 Kontener Chlodniczy: 
+Nadawca: Leo Johnson, 
+tara: WideVan-100, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 3200, 
+waga Brutto: 3200, 
+certyfikat: ISO, 
+dni przechowywania: 10, 
+pojemnosc(m3): 20, 
+temperatura: 9
+-------------------
+1 Kontener: 
+Nadawca: Jan Kowalski, 
+tara: 40-DryVan, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 3500, 
+waga Brutto: 4000, 
+certyfikat: ADR, 
+dni przechowywania: 10
+-------------------
+16 Kontener Ciezki: 
+Nadawca: Leo Johnson, 
+tara: Cube400-500, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 4000, 
+waga Brutto: 4100, 
+certyfikat: IMDG, 
+dni przechowywania: 6, 
+pojemnosc(m3): 863
+-------------------
+20 Kontener Ciezki: 
+Nadawca: Jan Kowalski, 
+tara: 40-High Cube, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 4000, 
+waga Brutto: 4100, 
+certyfikat: CSC, 
+dni przechowywania: 50, 
+pojemnosc(m3): 400
+-------------------
+17 Kontener Ciezki: 
+Nadawca: Dong Xingjuan, 
+tara: Cube80, 
+zabiezpiecznie: SlidingLoading, 
+waga Netto: 4100, 
+waga Brutto: 4400, 
+certyfikat: RID, 
+dni przechowywania: 8, 
+pojemnosc(m3): 1772
+-------------------
+2 Kontener: 
+Nadawca: Leo Johnson, 
+tara: Cube400-500, 
+zabiezpiecznie: SlidingLoading, 
+waga Netto: 4500, 
+waga Brutto: 4501, 
+certyfikat: ISO, 
+dni przechowywania: 60
+-------------------
+26 Kontener dla materialow toksycznych(sypkich): 
+Nadawca: Zhao Wen, 
+tara: Cube-60, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 4321, 
+waga Brutto: 4561, 
+certyfikat: ADR, 
+dni przechowywania: 20, 
+pojemnosc(m3): 150, 
+material sypki: Nitrate
+-------------------
+15 Kontener Chlodniczy: 
+Nadawca: Barlomej Kurowski, 
+tara: 40-High Cube, 
+zabiezpiecznie: SlidingLoading, 
+waga Netto: 5200, 
+waga Brutto: 5200, 
+certyfikat: ADR, 
+dni przechowywania: 6, 
+pojemnosc(m3): 20, 
+temperatura: 9
+-------------------
+21 Kontener dla materialow wybuchowych: 
+Nadawca: Barlomej Kurowski, 
+tara: 40-DryVan, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 5000, 
+waga Brutto: 5500, 
+certyfikat: RID, 
+dni przechowywania: 60, 
+pojemnosc(m3): 66, 
+material wybuchowy: Kwas azotowy
+-------------------
+23 Kontener dla materialow wybuchowych: 
+Nadawca: Barlomej Kurowski, 
+tara: 470-High Cube, 
+zabiezpiecznie: SlidingLoading, 
+waga Netto: 5000, 
+waga Brutto: 5900, 
+certyfikat: ADR, 
+dni przechowywania: 5, 
+pojemnosc(m3): 40, 
+material wybuchowy: heksogen
+-------------------
+22 Kontener dla materialow wybuchowych: 
+Nadawca: Dong Xingjuan, 
+tara: Cube-60, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 5000, 
+waga Brutto: 6300, 
+certyfikat: ISO, 
+dni przechowywania: 10, 
+pojemnosc(m3): 87, 
+material wybuchowy: trotyl
+
+___MAGAZYN___:
+[-------------------
+22 Kontener dla materialow wybuchowych: 
+Nadawca: Dong Xingjuan, 
+tara: Cube-60, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 5000, 
+waga Brutto: 6300, 
+certyfikat: ISO, 
+dni przechowywania: 10, 
+pojemnosc(m3): 87, 
+material wybuchowy: trotyl, -------------------
+1 Kontener: 
+Nadawca: Jan Kowalski, 
+tara: 40-DryVan, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 3500, 
+waga Brutto: 4000, 
+certyfikat: ADR, 
+dni przechowywania: 10, -------------------
+8 Kontener dla materialow cieklych: 
+Nadawca: Jan Kowalski, 
+tara: WideVan-100, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 980, 
+waga Brutto: 1000, 
+certyfikat: ISO, 
+dni przechowywania: 13, 
+pojemnosc(L): 50, -------------------
+5 Kontener: 
+Nadawca: Barlomej Kurowski, 
+tara: Cube-60, 
+zabiezpiecznie: SlidingLoading, 
+waga Netto: 1340, 
+waga Brutto: 1650, 
+certyfikat: IMDG, 
+dni przechowywania: 14, -------------------
+6 Kontener dla materialow cieklych: 
+Nadawca: Jan Kowalski, 
+tara: 40-High Cube, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 580, 
+waga Brutto: 700, 
+certyfikat: ADR, 
+dni przechowywania: 2, 
+pojemnosc(L): 60, -------------------
+14 Kontener Chlodniczy: 
+Nadawca: Barlomej Kurowski, 
+tara: 470-High Cube, 
+zabiezpiecznie: SlidingLoading, 
+waga Netto: 1230, 
+waga Brutto: 1250, 
+certyfikat: CSC, 
+dni przechowywania: 45, 
+pojemnosc(m3): 20, 
+temperatura: 9, -------------------
+16 Kontener Ciezki: 
+Nadawca: Leo Johnson, 
+tara: Cube400-500, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 4000, 
+waga Brutto: 4100, 
+certyfikat: IMDG, 
+dni przechowywania: 6, 
+pojemnosc(m3): 863, -------------------
+21 Kontener dla materialow wybuchowych: 
+Nadawca: Barlomej Kurowski, 
+tara: 40-DryVan, 
+zabiezpiecznie: RigidLoading, 
+waga Netto: 5000, 
+waga Brutto: 5500, 
+certyfikat: RID, 
+dni przechowywania: 60, 
+pojemnosc(m3): 66, 
+material wybuchowy: Kwas azotowy]
